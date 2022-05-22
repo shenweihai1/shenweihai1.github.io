@@ -24,18 +24,21 @@ export default function Profile() {
         <Box sx={{ width: "100%", display: "flex", justifyItems: "end" }}></Box>
       </Grid>
       <Grid item xs={12} md={5}>
-        <Box p={2} sx={{ textAlign: "left" }}>
+        <Box p={1} sx={{ textAlign: "left" }}>
           <Typography variant="h4">Weihai Shen</Typography>
+          <Typography color="text.secondary" sx={{ fontSize: 18 }} gutterBottom>
+            weihai.shen@stonybrook.edu
+          </Typography>{" "}
           <Typography color="text.secondary" sx={{ fontSize: 18 }} gutterBottom>
             
           </Typography>{" "}
           <Chip
-            label="Distributed system"
+            label="Distributed systems"
             size="small"
             color="secondary"
             variant="outlined"
           />{" "}
-          <Chip label="Multi-core" size="small" color="primary" variant="outlined" />{" "}
+          <Chip label="Multi-core systems" size="small" color="primary" variant="outlined" />{" "}
           <Chip
             label="Fault tolerance"
             size="small"
@@ -58,8 +61,8 @@ export default function Profile() {
             <a href="https://github.com/stonysystems"> stonysystems</a>.
           </Typography>
         </Box>
-        <Box p={2} sx={{ textAlign: "left" }}>
-          <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
+        <Box p={1} sx={{ textAlign: "left" }}>
+          <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 2 }}>
             <Grid item xs={4} md={2.5}>
               <Box display="flex" sx={{ flexDirection: "row" }}>
                 <Box sx={{ paddingRight: 1, paddingLeft: 1 }}>
@@ -118,19 +121,19 @@ export default function Profile() {
           ></Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="h4">Education </Typography>
           </Box>
         </Grid>
       </Grid>
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
-          <Box p={2} textAlign={{ xs: "left", md: "right" }}>
+          <Box p={1} textAlign={{ xs: "left", md: "right" }}>
             <Typography variant="caption">August 2020 - Present</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>Ph.D. in Computer Science </Box>
             </Typography>
@@ -150,12 +153,12 @@ export default function Profile() {
       </Grid>
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
-          <Box p={2} textAlign={{ xs: "left", md: "right" }}>
+          <Box p={1} textAlign={{ xs: "left", md: "right" }}>
             <Typography variant="caption">August 2018 - May 2020</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>M.S. in Computer Science</Box>
             </Typography>
@@ -167,14 +170,14 @@ export default function Profile() {
       </Grid>
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
-          <Box p={2} textAlign={{ xs: "left", md: "right" }}>
+          <Box p={1} textAlign={{ xs: "left", md: "right" }}>
             <Typography variant="caption">
               September 2010 - July 2014
             </Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>B.S. in Geographic Information System</Box>
             </Typography>
@@ -197,19 +200,19 @@ export default function Profile() {
           ></Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="h4">Experience </Typography>
           </Box>
         </Grid>
       </Grid>
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
-          <Box p={2} textAlign={{ xs: "left", md: "right" }}>
+          <Box p={1} textAlign={{ xs: "left", md: "right" }}>
             <Typography variant="caption"> May 2021 – Aug 2021</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>
               Research Intern{" "}
@@ -229,12 +232,12 @@ export default function Profile() {
 
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
-          <Box p={2} textAlign={{ xs: "left", md: "right" }}>
+          <Box p={1} textAlign={{ xs: "left", md: "right" }}>
             <Typography variant="caption">June 2016 – June 2018</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>
                 Software Development Engineer & Data Engineer{" "}
@@ -255,12 +258,12 @@ export default function Profile() {
 
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
-          <Box p={2} textAlign={{ xs: "left", md: "right" }}>
+          <Box p={1} textAlign={{ xs: "left", md: "right" }}>
             <Typography variant="caption">June 2015 – June 2016</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>
               Software Development Engineer{" "}
@@ -280,12 +283,12 @@ export default function Profile() {
 
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
-          <Box p={2} textAlign={{ xs: "left", md: "right" }}>
+          <Box p={1} textAlign={{ xs: "left", md: "right" }}>
             <Typography variant="caption">July 2014 – April 2015</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>
               Software Development Engineer{" "}
@@ -315,7 +318,7 @@ export default function Profile() {
           ></Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="h4">Publications </Typography>
           </Box>
         </Grid>
@@ -323,10 +326,10 @@ export default function Profile() {
 
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={0} md={4}>
-          <Box p={2} sx={{ textAlign: "right" }}></Box>
+          <Box p={1} sx={{ textAlign: "right" }}></Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box p={2} sx={{ textAlign: "left" }}>
+          <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>
               Rolis: a software approach to efficiently replicating multi-core transactions{" "}
