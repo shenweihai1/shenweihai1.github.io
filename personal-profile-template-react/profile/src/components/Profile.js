@@ -39,12 +39,6 @@ export default function Profile() {
             variant="outlined"
           />{" "}
           <Chip label="Multi-core systems" size="small" color="primary" variant="outlined" />{" "}
-          <Chip
-            label="Fault tolerance"
-            size="small"
-            color="success"
-            variant="outlined"
-          />
           <br />
           <br />
 
@@ -61,11 +55,12 @@ export default function Profile() {
             <a href="https://github.com/stonysystems"> stonysystems</a>.
           </Typography>
         </Box>
+
         <Box p={1} sx={{ textAlign: "left" }}>
-          <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 2 }}>
-            <Grid item xs={4} md={2.5}>
+          <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 2.4 }}>
+            <Grid item xs={4} md={2.3}>
               <Box display="flex" sx={{ flexDirection: "row" }}>
-                <Box sx={{ paddingRight: 1, paddingLeft: 1 }}>
+                <Box sx={{ paddingRight: 1, paddingLeft: 0 }}>
                   <SchoolIcon fontSize="small" />
                 </Box>
                 <Typography variant="body2">
@@ -77,7 +72,7 @@ export default function Profile() {
             </Grid>
             <Grid item xs={4} md={2}>
               <Box display="flex" sx={{ flexDirection: "row" }}>
-                <Box sx={{ paddingRight: 1, paddingLeft: 1 }}>
+                <Box sx={{ paddingRight: 1, paddingLeft: 0 }}>
                   <GitHubIcon sx={{ color: "#7b1fa2" }} fontSize="small" />
                 </Box>
                 <Typography variant="body2">
@@ -87,7 +82,7 @@ export default function Profile() {
             </Grid>
             <Grid item xs={4} md={2}>
               <Box display="flex" sx={{ flexDirection: "row" }}>
-                <Box sx={{ paddingRight: 1, paddingLeft: 1 }}>
+                <Box sx={{ paddingRight: 1, paddingLeft: 0 }}>
                   <TwitterIcon sx={{ color: "#42a5f5" }} fontSize="small" />
                 </Box>
                 <Typography variant="body2">
@@ -97,7 +92,7 @@ export default function Profile() {
             </Grid>
             <Grid item xs={4} md={2}>
               <Box display="flex" sx={{ flexDirection: "row" }}>
-                <Box sx={{ paddingRight: 1, paddingLeft: 1 }}>
+                <Box sx={{ paddingRight: 1, paddingLeft: 0 }}>
                   <LinkedInIcon sx={{ color: "#1565c0" }} fontSize="small" />
                 </Box>
                 <Typography variant="body2">
@@ -215,12 +210,12 @@ export default function Profile() {
           <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>
-              Research Intern{" "}
+              System Research Intern{" "}
               </Box>
             </Typography>
 
             <Typography gutterBottom>
-            ByteDance (Infrastructure System Lab), Mountain View, CA
+            Infrastructure system lab, ByteDance, Mountain View, CA
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
@@ -240,12 +235,12 @@ export default function Profile() {
           <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>
-                Software Development Engineer & Data Engineer{" "}
+                Software Development & Data Engineer{" "}
               </Box>
             </Typography>
 
             <Typography gutterBottom>
-            ByteDance (User growth team & Data team Beijing), Beijing
+            User growth & data team, ByteDance, Beijing
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
@@ -271,11 +266,11 @@ export default function Profile() {
             </Typography>
 
             <Typography gutterBottom>
-            Baidu (Knowledge search team), Beijing
+            Knowledge search team, Baidu, Beijing
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
-            Built a big-data tool to analyze the performance of the iterative product; implemented iterative development on a daily basis according to needs.
+            Built a big-data tool to analyze the performance of the iterative product; iterated product on a daily basis according to needs.
             </Typography>
           </Box>
         </Grid>
@@ -296,11 +291,11 @@ export default function Profile() {
             </Typography>
 
             <Typography gutterBottom>
-            Ganji (Real estate team), Beijing
+            R&D department, Ganji, Beijing
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
-            Optimized the website’s SEO; implemented iterative development on a daily basis according to needs.
+            Optimized the website’s SEO; iterated product on a daily basis on requests.
             </Typography>
           </Box>
         </Grid>
