@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.1a5708b4.chunk.css",
-    "main.js": "/static/js/main.5aaa3a3c.chunk.js",
-    "main.js.map": "/static/js/main.5aaa3a3c.chunk.js.map",
+    "main.js": "/static/js/main.0bb158d8.chunk.js",
+    "main.js.map": "/static/js/main.0bb158d8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.069890a3.js",
     "runtime-main.js.map": "/static/js/runtime-main.069890a3.js.map",
-    "static/js/2.bbeb0273.chunk.js": "/static/js/2.bbeb0273.chunk.js",
-    "static/js/2.bbeb0273.chunk.js.map": "/static/js/2.bbeb0273.chunk.js.map",
+    "static/js/2.49b31e3e.chunk.js": "/static/js/2.49b31e3e.chunk.js",
+    "static/js/2.49b31e3e.chunk.js.map": "/static/js/2.49b31e3e.chunk.js.map",
     "static/js/3.317318a0.chunk.js": "/static/js/3.317318a0.chunk.js",
     "static/js/3.317318a0.chunk.js.map": "/static/js/3.317318a0.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.1a5708b4.chunk.css.map": "/static/css/main.1a5708b4.chunk.css.map",
-    "static/js/2.bbeb0273.chunk.js.LICENSE.txt": "/static/js/2.bbeb0273.chunk.js.LICENSE.txt",
+    "static/js/2.49b31e3e.chunk.js.LICENSE.txt": "/static/js/2.49b31e3e.chunk.js.LICENSE.txt",
     "static/media/rolis-eurosys22.6ebe4d2d.pdf": "/static/media/rolis-eurosys22.6ebe4d2d.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.069890a3.js",
-    "static/js/2.bbeb0273.chunk.js",
+    "static/js/2.49b31e3e.chunk.js",
     "static/css/main.1a5708b4.chunk.css",
-    "static/js/main.5aaa3a3c.chunk.js"
+    "static/js/main.0bb158d8.chunk.js"
   ]
 }

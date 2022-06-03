@@ -26,12 +26,6 @@ export default function Profile() {
       <Grid item xs={12} md={5}>
         <Box p={1} sx={{ textAlign: "left" }}>
           <Typography variant="h4">Weihai Shen</Typography>
-          <Typography color="text.secondary" sx={{ fontSize: 18 }} gutterBottom>
-            weihai.shen@stonybrook.edu
-          </Typography>{" "}
-          <Typography color="text.secondary" sx={{ fontSize: 18 }} gutterBottom>
-            
-          </Typography>{" "}
           <Chip
             label="Distributed systems"
             size="small"
@@ -54,9 +48,22 @@ export default function Profile() {
             as a member of the
             <a href="https://github.com/stonysystems"> stonysystems</a>.
           </Typography>
+          <br />
+
+          <Typography color="text.secondary" variant="body1">
+            Email: weihshen at cs.stonybrook.edu
+          </Typography>
+          <Typography color="text.secondary" variant="body1">
+            Links:
+              <a href="https://scholar.google.com/citations?hl=en&user=MUfiJWgAAAAJ"> Google Scholar </a>/
+              <a href="https://twitter.com/WeihaiShen"> Twitter </a>/
+              <a href="https://github.com/shenweihai1"> Github </a>/
+              <a href="https://www.linkedin.com/in/tall-cool-13yrs/"> LinkedIn </a>
+              
+          </Typography>
         </Box>
 
-        <Box p={1} sx={{ textAlign: "left" }}>
+        {/* <Box p={1} sx={{ textAlign: "left" }}>
           <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 2.4 }}>
             <Grid item xs={4} md={2.3}>
               <Box display="flex" sx={{ flexDirection: "row" }}>
@@ -101,7 +108,7 @@ export default function Profile() {
               </Box>
             </Grid>
           </Grid>
-        </Box>
+        </Box> */}
         <Divider variant="middle" />
       </Grid>
     </Grid>
