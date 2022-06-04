@@ -350,7 +350,7 @@ export default function Profile() {
             </Typography>
             <Typography gutterBottom>
               <Box display="inline" sx={{ fontStyle: "oblique" }}>
-              USENIX Annual Technical Conference (USENIX ATC) , 2022
+              (To Appear) In Proceedings of the USENIX Annual Technical Conference (USENIX ATC), 2022
               </Box>
             </Typography>
           </Box>
