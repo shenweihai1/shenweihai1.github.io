@@ -148,7 +148,7 @@ export default function Profile() {
               <Box display="inline" color="text.secondary">
                 Advisor:
               </Box>{" "}
-              Shuai Mu
+              <a href="http://mpaxos.com/">Shuai Mu</a>{" "}
             </Typography>
           </Box>
         </Grid>
@@ -166,6 +166,13 @@ export default function Profile() {
             </Typography>
             <Typography gutterBottom>
               Arizona State University, AZ
+            </Typography>
+
+            <Typography variant="body2">
+              <Box display="inline" color="text.secondary">
+                Advisor:
+              </Box>{" "}
+              <a href="http://rmaciejewski.faculty.asu.edu/">Ross Maciejewski</a>{" "}
             </Typography>
           </Box>
         </Grid>
