@@ -331,6 +331,23 @@ export default function Profile() {
           <Box p={1} sx={{ textAlign: "right" }}></Box>
         </Grid>
         <Grid item xs={12} md={5}>
+        <Box p={1} sx={{ textAlign: "left" }}>
+            <Typography variant="body1">
+              <Box sx={{ fontWeight: "bold" }}>
+              DepFast: Orchestrating Code of Quorum Systems{" "}
+              </Box>
+            </Typography>
+
+            <Typography color="text.secondary" variant="body2" gutterBottom>
+            Xuhao Luo, Weihai Shen, Shuai Mu, and Tianyin Xu
+            </Typography>
+            <Typography gutterBottom>
+              <Box display="inline" sx={{ fontStyle: "oblique" }}>
+              USENIX Annual Technical Conference (USENIX ATC) , 2022
+              </Box>
+            </Typography>
+          </Box>
+
           <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>
@@ -339,7 +356,7 @@ export default function Profile() {
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
-            Weihai Shen, Ansh Khanna, Sebastian Angel, Siddhartha Sen, and Shuai Mu
+              Weihai Shen, Ansh Khanna, Sebastian Angel, Siddhartha Sen, and Shuai Mu
             </Typography>
             <Typography gutterBottom>
               <Box display="inline" sx={{ fontStyle: "oblique" }}>
@@ -416,6 +433,7 @@ export default function Profile() {
               </Box>
             </Box>
           </Box>
+
         </Grid>
       </Grid>
 
