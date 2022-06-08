@@ -14,6 +14,7 @@ import CodeIcon from "@mui/icons-material/Code";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Chip from "@mui/material/Chip";
 import ROLIS from "../profile_data/rolis-eurosys22.pdf";
+import ROLIS_SLIDES from "../profile_data/rolis-slides.pdf";
 
 // https://github.com/tiankaixie/personal-profile-template-react/blob/main/profile/src/components/Profile.js
 
@@ -403,6 +404,23 @@ export default function Profile() {
                 </Box>
                 <Typography variant="body2">
                   <a href="https://youtu.be/LLJAUClrsnU">Video</a>
+                </Typography>
+              </Box>
+
+
+              <Box
+                display="flex"
+                sx={{
+                  paddingRight: 1,
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+              >
+                <Box sx={{ paddingRight: 1 }}>
+                  <SlideshowIcon fontSize="small" />
+                </Box>
+                <Typography variant="body2">
+                  <a href={ROLIS_SLIDES}>Talk</a>
                 </Typography>
               </Box>
 
