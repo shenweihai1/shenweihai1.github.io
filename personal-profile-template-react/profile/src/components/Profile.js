@@ -389,7 +389,8 @@ export default function Profile() {
                   <a href={ROLIS}>PDF</a>
                 </Typography>
               </Box>
-              {/* <Box
+
+              <Box
                 display="flex"
                 sx={{
                   paddingRight: 1,
@@ -401,25 +402,9 @@ export default function Profile() {
                   <YouTubeIcon sx={{ color: "#3c3c3c" }} fontSize="small" />
                 </Box>
                 <Typography variant="body2">
-                  <a href="https://youtu.be/WVJ3-UXNxPk">Video</a>
+                  <a href="https://youtu.be/LLJAUClrsnU">Video</a>
                 </Typography>
-              </Box> */}
-
-              {/* <Box
-                display="flex"
-                sx={{
-                  paddingRight: 1,
-                  flexDirection: "row",
-                  justifyContent: "center",
-                }}
-              >
-                <Box sx={{ paddingRight: 1 }}>
-                  <SlideshowIcon fontSize="small" />
-                </Box>
-                <Typography variant="body2">
-                  <a href="#">Talk</a>
-                </Typography>
-              </Box> */}
+              </Box>
 
               <Box
                 display="flex"
