@@ -14,6 +14,7 @@ import CodeIcon from "@mui/icons-material/Code";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Chip from "@mui/material/Chip";
 import ROLIS from "../profile_data/rolis-eurosys22.pdf";
+import DEPFAST from "../profile_data/depfast-atc.pdf";
 import ROLIS_SLIDES from "../profile_data/rolis-slides.pdf";
 
 // https://github.com/tiankaixie/personal-profile-template-react/blob/main/profile/src/components/Profile.js
@@ -354,6 +355,46 @@ export default function Profile() {
               In Proceedings of the USENIX Annual Technical Conference (USENIX ATC), 2022
               </Box>
             </Typography>
+
+            <Box
+              display="flex"
+              sx={{ flexDirection: "row", justifyContent: "start" }}
+            >
+              <Box
+                display="flex"
+                sx={{
+                  paddingRight: 1,
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+              >
+                <Box sx={{ paddingRight: 1 }}>
+                  <DescriptionIcon sx={{ color: "#c62828" }} fontSize="small" />
+                </Box>
+                <Typography variant="body2">
+                  <a href={DEPFAST}>PDF</a>
+                </Typography>
+              </Box>
+
+              <Box
+                display="flex"
+                sx={{
+                  paddingRight: 1,
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+              >
+                <Box sx={{ paddingRight: 1 }}>
+                  <CodeIcon fontSize="small" />
+                </Box>
+                <Typography variant="body2">
+                  <a href="https://github.com/xlab-uiuc/depfast/tree/atc_ae">
+                    Source Code
+                  </a>
+                </Typography>
+               </Box>
+
+            </Box>
           </Box>
 
           <Box p={1} sx={{ textAlign: "left" }}>
