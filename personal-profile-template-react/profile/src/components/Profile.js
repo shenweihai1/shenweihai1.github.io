@@ -22,8 +22,10 @@ import ROLIS_SLIDES from "../profile_data/rolis-slides.pdf";
 export default function Profile() {
   const intro = (
     <Grid container spacing={3}>
-      <Grid item xs={0} md={4}>
-        <Box sx={{ width: "100%", display: "flex", justifyItems: "end" }}></Box>
+      <Grid item xs={12} md={4}>
+          <Box p={1} textAlign={{ xs: "left", md: "right" }}>
+            
+          </Box>
       </Grid>
       <Grid item xs={12} md={5}>
         <Box p={1} sx={{ textAlign: "left" }}>
@@ -133,7 +135,7 @@ export default function Profile() {
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
           <Box p={1} textAlign={{ xs: "left", md: "right" }}>
-            <Typography variant="caption">August 2020 - Present</Typography>
+            <Typography variant="caption" sx={{ fontSize: "0.85rem" }}>August 2020 - Present</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
@@ -158,7 +160,7 @@ export default function Profile() {
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
           <Box p={1} textAlign={{ xs: "left", md: "right" }}>
-            <Typography variant="caption">August 2018 - May 2020</Typography>
+            <Typography variant="caption" sx={{ fontSize: "0.85rem" }}>August 2018 - May 2020</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
@@ -182,7 +184,7 @@ export default function Profile() {
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
           <Box p={1} textAlign={{ xs: "left", md: "right" }}>
-            <Typography variant="caption">
+            <Typography variant="caption" sx={{ fontSize: "0.85rem" }}>
               September 2010 - July 2014
             </Typography>
           </Box>
@@ -219,7 +221,7 @@ export default function Profile() {
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
           <Box p={1} textAlign={{ xs: "left", md: "right" }}>
-            <Typography variant="caption"> May 2021 – Aug 2021</Typography>
+            <Typography variant="caption" sx={{ fontSize: "0.85rem" }}> May 2021 – Aug 2021</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
@@ -244,7 +246,7 @@ export default function Profile() {
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
           <Box p={1} textAlign={{ xs: "left", md: "right" }}>
-            <Typography variant="caption">June 2016 – June 2018</Typography>
+            <Typography variant="caption" sx={{ fontSize: "0.85rem" }}>June 2016 – June 2018</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
@@ -270,7 +272,7 @@ export default function Profile() {
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
           <Box p={1} textAlign={{ xs: "left", md: "right" }}>
-            <Typography variant="caption">June 2015 – June 2016</Typography>
+            <Typography variant="caption" sx={{ fontSize: "0.85rem" }}>June 2015 – June 2016</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
@@ -295,7 +297,7 @@ export default function Profile() {
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
           <Box p={1} textAlign={{ xs: "left", md: "right" }}>
-            <Typography variant="caption">July 2014 – April 2015</Typography>
+            <Typography variant="caption" sx={{ fontSize: "0.85rem" }}>July 2014 – April 2015</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
