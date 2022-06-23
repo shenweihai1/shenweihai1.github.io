@@ -237,7 +237,7 @@ export default function Profile() {
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
-            Implemented memory allocation & memory tracking for the next generation database system.
+            Implemented underlying memory allocation & tracking for the HTAP database system; to be familiar with Clickhouse.
             </Typography>
           </Box>
         </Grid>
@@ -262,8 +262,7 @@ export default function Profile() {
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
-            Implemented different models and strategies to boost user growth; 
-            built a realtime big data analysis platform that can provide users real-time statistical information on a large scale.
+            Implemented different models and strategies to boost user growth; built a big-data platform that can provide users near real-time statistical information of products.
             </Typography>
           </Box>
         </Grid>
@@ -288,7 +287,7 @@ export default function Profile() {
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
-            Built a big-data tool to analyze the performance of the iterative product; iterated product on a daily basis according to needs.
+            Built a big-data tool to analyze the performance of the iterative product; iterated products on a daily basis according to needs.
             </Typography>
           </Box>
         </Grid>
@@ -313,7 +312,7 @@ export default function Profile() {
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
-            Optimized the website’s SEO; iterated product on a daily basis on requests.
+            Optimized the website’s SEO; iterated products on a daily basis on requests.
             </Typography>
           </Box>
         </Grid>
