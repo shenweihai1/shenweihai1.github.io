@@ -16,15 +16,16 @@ import Chip from "@mui/material/Chip";
 import ROLIS from "../profile_data/rolis-eurosys22.pdf";
 import DEPFAST from "../profile_data/depfast-atc.pdf";
 import ROLIS_SLIDES from "../profile_data/rolis-slides.pdf";
+import AVATAR from "../profile_data/avatar.jpg";
 
 // https://github.com/tiankaixie/personal-profile-template-react/blob/main/profile/src/components/Profile.js
 
 export default function Profile() {
   const intro = (
-    <Grid container spacing={3}>
+    <Grid container spacing={3} columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
       <Grid item xs={12} md={4}>
           <Box p={1} textAlign={{ xs: "left", md: "right" }}>
-            
+            <img src={AVATAR} width="42%"/>
           </Box>
       </Grid>
       <Grid item xs={12} md={5}>
@@ -237,7 +238,7 @@ export default function Profile() {
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
-            Implemented underlying memory allocation & tracking for the HTAP database system; to be familiar with Clickhouse.
+            Implemented underlying memory allocation & tracking for the HSAP database system; to be familiar with Clickhouse.
             </Typography>
           </Box>
         </Grid>
@@ -308,7 +309,7 @@ export default function Profile() {
             </Typography>
 
             <Typography gutterBottom>
-            R&D department, Ganji, Beijing
+            R&D department, Ganji (acquired by 58.com), Beijing
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
