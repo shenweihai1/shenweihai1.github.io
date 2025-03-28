@@ -219,6 +219,37 @@ export default function Profile() {
           </Box>
         </Grid>
       </Grid>
+
+      <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
+        <Grid item xs={12} md={4}>
+          <Box p={1} textAlign={{ xs: "left", md: "right" }}>
+            <Typography variant="caption" sx={{ fontSize: "0.85rem" }}> May 2021 – Aug 2021</Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={5}>
+          <Box p={1} sx={{ textAlign: "left" }}>
+            <Typography variant="body1">
+              <Box sx={{ fontWeight: "bold" }}>
+              Software Engineer Intern{" "}
+              </Box>
+            </Typography>
+
+            <Typography gutterBottom>
+            NetInfra, Google, Sunnyvale, CA
+            </Typography>
+
+            <Typography color="text.secondary" variant="body2" gutterBottom>
+            • Developed a prototype for 1:N networking multiplexing in Libfabric, enabling efficient communication
+            between one endpoint and multiple shared queue pairs (QPs). 
+            </Typography>
+
+            <Typography color="text.secondary" variant="body2" gutterBottom>
+            • Conducted comprehensive benchmarks on RDMA isolation using our RDMA-connected SmartNICs, analyzing interesting findings. 
+            </Typography>
+          </Box>
+        </Grid>
+      </Grid>
+
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
           <Box p={1} textAlign={{ xs: "left", md: "right" }}>
@@ -234,17 +265,50 @@ export default function Profile() {
             </Typography>
 
             <Typography gutterBottom>
-            Infrastructure system lab, ByteDance, Mountain View, CA
+            Infrastructure system lab, ByteDance (Tiktok), Mountain View, CA
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
-            Implemented underlying memory allocation & tracking for the HSAP database system; to be familiar with Clickhouse.
+            • Designed and implemented a prototype memory allocation and tracking engine for the next-generation HSAP database system, optimizing resource utilization and system performance. 
             </Typography>
           </Box>
         </Grid>
       </Grid>
 
+
       <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
+        <Grid item xs={12} md={4}>
+          <Box p={1} textAlign={{ xs: "left", md: "right" }}>
+            <Typography variant="caption" sx={{ fontSize: "0.85rem" }}> July 2014 ∼ June 2018 </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={5}>
+          <Box p={1} sx={{ textAlign: "left" }}>
+            <Typography variant="body1">
+              <Box sx={{ fontWeight: "bold" }}>
+              Software development & data engineer{" "}
+              </Box>
+            </Typography>
+
+            <Typography gutterBottom>
+            ByteDance/Baidu/Ganji (acquired by 58.com), Beijing, China
+            </Typography>
+
+            <Typography color="text.secondary" variant="body2" gutterBottom>
+            • Developed an intelligent ad platform by integrating multiple ad engines, managing thousands of keywords to significantly enhance user growth. (Bytedance) </Typography>
+            <Typography color="text.secondary" variant="body2" gutterBottom>
+            • Implemented a real-time big data analysis platform using Apache Storm, Apache Flink, Apache Spark, and HBase, delivering scalable, near-realtime statistical data to users. (Bytedance)
+            <Typography color="text.secondary" variant="body2" gutterBottom></Typography>
+            • Designed and implemented a robust data warehouse using Apache Hive, enabling continuous monitoring and optimization of long-term user retention rates. (Bytedance)</Typography>
+            <Typography color="text.secondary" variant="body2" gutterBottom>
+            • Built a big data tool to analyze application performance; delivered software solutions in PHP for the application and systems according to specific needs. (Baidu)</Typography>
+            <Typography color="text.secondary" variant="body2" gutterBottom>
+            • Enhanced website search engine optimization (SEO); developed PHP software solutions to meet diverse application and system needs. (Ganji)</Typography>
+          </Box>
+        </Grid>
+      </Grid>
+
+      {/* <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
         <Grid item xs={12} md={4}>
           <Box p={1} textAlign={{ xs: "left", md: "right" }}>
             <Typography variant="caption" sx={{ fontSize: "0.85rem" }}>June 2016 – June 2018</Typography>
@@ -317,7 +381,7 @@ export default function Profile() {
             </Typography>
           </Box>
         </Grid>
-      </Grid>
+      </Grid> */}
   
     </React.Fragment>
   );
@@ -342,6 +406,64 @@ export default function Profile() {
           <Box p={1} sx={{ textAlign: "right" }}></Box>
         </Grid>
         <Grid item xs={12} md={5}>
+
+        <Box p={1} sx={{ textAlign: "left" }}>
+            <Typography variant="body1">
+              <Box sx={{ fontWeight: "bold" }}>
+              Warbler: Speculative Distributed Transactions with Geo-Replication{" "}
+              </Box>
+            </Typography>
+
+            <Typography color="text.secondary" variant="body2" gutterBottom>
+            Weihai Shen, Yang Cui, Siddhartha Sen, Sebastian Angel, and Shuai Mu
+            </Typography>
+            <Typography gutterBottom>
+              <Box display="inline" sx={{ fontStyle: "oblique" }}>
+              To appear in USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2025
+              </Box>
+            </Typography>
+
+            <Box
+              display="flex"
+              sx={{ flexDirection: "row", justifyContent: "start" }}
+            >
+              <Box
+                display="flex"
+                sx={{
+                  paddingRight: 1,
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+              >
+                <Box sx={{ paddingRight: 1 }}>
+                  <DescriptionIcon sx={{ color: "#c62828" }} fontSize="small" />
+                </Box>
+                <Typography variant="body2">
+                  <a href="">PDF</a>
+                </Typography>
+              </Box>
+
+              <Box
+                display="flex"
+                sx={{
+                  paddingRight: 1,
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+              >
+                <Box sx={{ paddingRight: 1 }}>
+                  <CodeIcon fontSize="small" />
+                </Box>
+                <Typography variant="body2">
+                  <a href="">
+                    Source Code
+                  </a>
+                </Typography>
+               </Box>
+
+            </Box>
+        </Box>
+
         <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>
@@ -407,7 +529,7 @@ export default function Profile() {
             </Typography>
 
             <Typography color="text.secondary" variant="body2" gutterBottom>
-              Weihai Shen, Ansh Khanna, Sebastian Angel, Siddhartha Sen, and Shuai Mu
+            Weihai Shen, Ansh Khanna, Sebastian Angel, Siddhartha Sen, and Shuai Mu
             </Typography>
             <Typography gutterBottom>
               <Box display="inline" sx={{ fontStyle: "oblique" }}>
@@ -493,11 +615,48 @@ export default function Profile() {
     </React.Fragment>
   );
 
+  const services= (
+    <React.Fragment>
+      <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
+        <Grid item xs={0} md={4}>
+          <Box
+            sx={{ width: "100%", display: "flex", justifyItems: "end" }}
+          ></Box>
+        </Grid>
+        <Grid item xs={12} md={5}>
+          <Box p={1} sx={{ textAlign: "left" }}>
+            <Typography variant="h4">Services</Typography>
+          </Box>
+        </Grid>
+      </Grid>
+
+      <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
+        <Grid item xs={0} md={4}>
+          <Box p={1} sx={{ textAlign: "right" }}></Box>
+        </Grid>
+        <Grid item xs={12} md={5}>
+
+        <Box p={1} sx={{ textAlign: "left" }}>
+            <Typography variant="body2">
+              <Box >
+              External Review Committee for USENIX ATC 2024{" "}
+              </Box>
+            </Typography>
+        </Box>
+
+
+        </Grid>
+      </Grid>
+    </React.Fragment>
+  );
+
+
   return (
     <React.Fragment>
       {intro}
-      {education}
+      {/* {education} */}
       {publications}
+      {services}
       {experience}
     </React.Fragment>
   );
