@@ -650,6 +650,47 @@ export default function Profile() {
     </React.Fragment>
   );
 
+  const teaching= (
+    <React.Fragment>
+      <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
+        <Grid item xs={0} md={4}>
+          <Box
+            sx={{ width: "100%", display: "flex", justifyItems: "end" }}
+          ></Box>
+        </Grid>
+        <Grid item xs={12} md={5}>
+          <Box p={1} sx={{ textAlign: "left" }}>
+            <Typography variant="h4">Teaching</Typography>
+          </Box>
+        </Grid>
+      </Grid>
+
+      <Grid container columnSpacing={{ xs: 0.5, sm: 2, md: 3 }}>
+        <Grid item xs={0} md={4}>
+          <Box p={1} sx={{ textAlign: "right" }}></Box>
+        </Grid>
+        <Grid item xs={12} md={5}>
+
+        <Box p={1} sx={{ textAlign: "left" }}>
+            <Typography variant="body2">
+              <Box >
+              Teaching Assistant on <a href="http://mpaxos.com/teaching/ds/22fa/">CSE 535: Distributed Systems, Fall 2022</a>{" "}
+              </Box>
+              <Box >
+              Teaching Assistant on <a href="https://bsd7.cs.stonybrook.edu/~cse320/">CSE 320: Systems Fundamentals II, Spring 2021</a>{" "}
+              </Box>
+              <Box >
+              Teaching Assistant on ISE 305: Database Design and Practice, Fall 2020{" "}
+              </Box>
+            </Typography>
+        </Box>
+
+
+        </Grid>
+      </Grid>
+    </React.Fragment>
+  );
+
 
   return (
     <React.Fragment>
@@ -657,6 +698,7 @@ export default function Profile() {
       {/* {education} */}
       {publications}
       {services}
+      {teaching}
       {experience}
     </React.Fragment>
   );
