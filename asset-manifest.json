@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.318b6a3b.css",
-    "main.js": "/static/js/main.8c0f8784.js",
+    "main.js": "/static/js/main.f84c4eb8.js",
     "static/js/453.e92b33bb.chunk.js": "/static/js/453.e92b33bb.chunk.js",
     "static/media/avatar.jpg": "/static/media/avatar.0afc269eb153e65170f6.jpg",
     "static/media/depfast-atc.pdf": "/static/media/depfast-atc.acfb9df309f37c539f3d.pdf",
@@ -9,11 +9,11 @@
     "static/media/rolis-eurosys22.pdf": "/static/media/rolis-eurosys22.6ebe4d2d9c7c85fb5474.pdf",
     "index.html": "/index.html",
     "main.318b6a3b.css.map": "/static/css/main.318b6a3b.css.map",
-    "main.8c0f8784.js.map": "/static/js/main.8c0f8784.js.map",
+    "main.f84c4eb8.js.map": "/static/js/main.f84c4eb8.js.map",
     "453.e92b33bb.chunk.js.map": "/static/js/453.e92b33bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.318b6a3b.css",
-    "static/js/main.8c0f8784.js"
+    "static/js/main.f84c4eb8.js"
   ]
 }

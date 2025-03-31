@@ -38,6 +38,7 @@ export default function Profile() {
             variant="outlined"
           />{" "}
           <Chip label="Multi-core systems" size="small" color="primary" variant="outlined" />{" "}
+          <Chip label="Transactional databases" size="small" color="secondary" variant="outlined" />{" "}
           <br />
           <br />
 
