@@ -43,7 +43,7 @@ export default function Profile() {
 
           <Typography color="text.secondary" variant="body1">
             I am currently a Ph.D. student in computer science at{" "}
-            <a href="https://www.stonybrook.edu/"> Stony Brook University</a>. My
+            <a href="https://www.stonybrook.edu/"> Stony Brook University</a> since Fall 2020. My
             research is distributed systems and multi-core systems.
           </Typography>
           <br />
