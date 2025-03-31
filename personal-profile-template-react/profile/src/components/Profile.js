@@ -639,7 +639,7 @@ export default function Profile() {
         <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body2">
               <Box >
-              External Review Committee for USENIX ATC 2024{" "}
+              <a href="https://www.usenix.org/sites/default/files/atc24-message.pdf">External Review Committee</a> for USENIX ATC 2024{" "}
               </Box>
             </Typography>
         </Box>
