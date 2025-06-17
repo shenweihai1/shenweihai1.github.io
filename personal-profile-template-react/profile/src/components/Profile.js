@@ -15,6 +15,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Chip from "@mui/material/Chip";
 import ROLIS from "../profile_data/rolis-eurosys22.pdf";
 import DEPFAST from "../profile_data/depfast-atc.pdf";
+import MAKO from "../profile_data/osdi25-final373.pdf";
 import ROLIS_SLIDES from "../profile_data/rolis-slides.pdf";
 import AVATAR from "../profile_data/avatar.jpg";
 
@@ -411,7 +412,7 @@ export default function Profile() {
         <Box p={1} sx={{ textAlign: "left" }}>
             <Typography variant="body1">
               <Box sx={{ fontWeight: "bold" }}>
-              Warbler: Speculative Distributed Transactions with Geo-Replication{" "}
+              Mako: Speculative Distributed Transactions with Geo-Replication{" "}
               </Box>
             </Typography>
 
@@ -420,7 +421,7 @@ export default function Profile() {
             </Typography>
             <Typography gutterBottom>
               <Box display="inline" sx={{ fontStyle: "oblique" }}>
-              To appear in USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2025
+              USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2025
               </Box>
             </Typography>
 
@@ -440,7 +441,7 @@ export default function Profile() {
                   <DescriptionIcon sx={{ color: "#c62828" }} fontSize="small" />
                 </Box>
                 <Typography variant="body2">
-                  <a href="">PDF</a>
+                  <a href={MAKO}>PDF</a>
                 </Typography>
               </Box>
 
@@ -456,7 +457,7 @@ export default function Profile() {
                   <CodeIcon fontSize="small" />
                 </Box>
                 <Typography variant="body2">
-                  <a href="">
+                  <a href="https://github.com/stonysystems/mako">
                     Source Code
                   </a>
                 </Typography>
