@@ -17,6 +17,7 @@ import ROLIS from "../profile_data/rolis-eurosys22.pdf";
 import DEPFAST from "../profile_data/depfast-atc.pdf";
 import MAKO from "../profile_data/osdi25-final373.pdf";
 import ROLIS_SLIDES from "../profile_data/rolis-slides.pdf";
+import MAKO_SLIDES from "../profile_data/mako-slides.pdf";
 import AVATAR from "../profile_data/avatar.jpg";
 
 // https://github.com/tiankaixie/personal-profile-template-react/blob/main/profile/src/components/Profile.js
@@ -454,6 +455,22 @@ export default function Profile() {
                 }}
               >
                 <Box sx={{ paddingRight: 1 }}>
+                  <SlideshowIcon fontSize="small" />
+                </Box>
+                <Typography variant="body2">
+                  <a href={MAKO_SLIDES}>Slides</a>
+                </Typography>
+              </Box>
+
+              <Box
+                display="flex"
+                sx={{
+                  paddingRight: 1,
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+              >
+                <Box sx={{ paddingRight: 1 }}>
                   <CodeIcon fontSize="small" />
                 </Box>
                 <Typography variant="body2">
@@ -587,7 +604,7 @@ export default function Profile() {
                   <SlideshowIcon fontSize="small" />
                 </Box>
                 <Typography variant="body2">
-                  <a href={ROLIS_SLIDES}>Talk</a>
+                  <a href={ROLIS_SLIDES}>Slides</a>
                 </Typography>
               </Box>
 
