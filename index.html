@@ -1,1 +1,397 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/><title>Weihai Shen</title><script defer="defer" src="/static/js/main.b77ceeec.js"></script><link href="/static/css/main.318b6a3b.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>Weihai Shen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        
+        .profile-info {
+            flex: 1;
+        }
+        
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+        }
+        
+        .tags {
+            margin-bottom: 20px;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #e8f4f8;
+            color: #2980b9;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #bde4f4;
+        }
+        
+        .bio {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .bio a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .bio a:hover {
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        
+        .contact-info a:hover {
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+        
+        .publication {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .publication:last-child {
+            border-bottom: none;
+        }
+        
+        .pub-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        
+        .pub-authors {
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        
+        .pub-venue {
+            font-style: italic;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+        
+        .pub-links {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .pub-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        
+        .pub-link:hover {
+            text-decoration: underline;
+        }
+        
+        .pdf-icon {
+            width: 16px;
+            height: 16px;
+            background-color: #e74c3c;
+            display: inline-block;
+            border-radius: 2px;
+        }
+        
+        .slides-icon {
+            width: 16px;
+            height: 16px;
+            background-color: #f39c12;
+            display: inline-block;
+            border-radius: 2px;
+        }
+        
+        .video-icon {
+            width: 16px;
+            height: 16px;
+            background-color: #9b59b6;
+            display: inline-block;
+            border-radius: 2px;
+        }
+        
+        .service-item {
+            margin-bottom: 10px;
+        }
+        
+        .teaching-item {
+            margin-bottom: 15px;
+        }
+        
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        
+        .exp-dates {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            white-space: nowrap;
+            margin-left: 20px;
+        }
+        
+        .exp-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .exp-company {
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+        
+        .exp-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .exp-details li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .exp-details li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./resources/avatar.jpg" alt="Weihai Shen" class="profile-photo">
+            
+            <div class="profile-info">
+                <h1 class="name">Weihai Shen</h1>
+                
+                <div class="bio">
+                    I am currently a PhD candidate in computer science at Stony Brook University since Fall 2020. My research is distributed systems and multi-core transactional systems.
+                </div>
+                
+                <div class="bio">
+                    At Stony Brook University, I work with Dr. <a href="http://mpaxos.com/">Shuai Mu</a> as a member of the <a href="https://github.com/stonysystems">stonysystems</a>.
+                </div>
+                
+                <div class="contact-info">
+                    <div>Email: weihshen at cs stonybrook edu</div>
+                    <div style="margin-top: 10px;">
+                        Links: 
+                        <a href="https://scholar.google.com/citations?hl=en&user=MUfiJWgAAAAJ">Google Scholar</a> / 
+                        <a href="https://x.com/WeihaiShen">Twitter</a> / 
+                        <a href="https://www.linkedin.com/in/tall-cool-13yrs/">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Publications</h2>
+            
+            <div class="publication">
+                <div class="pub-title">Mako: Speculative Distributed Transactions with Geo-Replication</div>
+                <div class="pub-authors">Weihai Shen, Yang Cui, Siddhartha Sen, Sebastian Angel, and Shuai Mu</div>
+                <div class="pub-venue">USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2025</div>
+                <div class="">
+                    <i class="bi bi-file-earmark-pdf"></i>
+                    <a href="./resources/mako-osdi25.pdf" class="pub-link">
+                        PDF
+                    </a>
+		    <i class="bi bi-file-earmark-slides"></i>
+                    <a href="./resources/mako-slides.pdf" class="pub-link">
+                        Slides
+                    </a>
+		    <i class="bi bi-code"></i>
+                    <a href="https://github.com/stonysystems/mako" class="pub-link">Source Code</a>
+                </div>
+            </div>
+            
+            <div class="publication">
+                <div class="pub-title">DepFast: Orchestrating Code of Quorum Systems</div>
+                <div class="pub-authors">Xuhao Luo, Weihai Shen, Shuai Mu, and Tianyin Xu</div>
+                <div class="pub-venue">In Proceedings of the USENIX Annual Technical Conference (USENIX ATC), 2022</div>
+                <div class="">
+	            <i class="bi bi-file-earmark-pdf"></i>
+                    <a href="./resources/depfast-atc22.pdf" class="pub-link">
+                        PDF
+                    </a>
+		    <i class="bi bi-code"></i>
+                    <a href="https://github.com/xlab-uiuc/depfast/tree/atc_ae" class="pub-link">Source Code</a>
+                </div>
+            </div>
+            
+            <div class="publication">
+                <div class="pub-title">Rolis: a software approach to efficiently replicating multi-core transactions</div>
+                <div class="pub-authors">Weihai Shen, Ansh Khanna, Sebastian Angel, Siddhartha Sen, and Shuai Mu</div>
+                <div class="pub-venue">In Proceedings of ACM European Conference on Computer Systems (EuroSys), 2022</div>
+                <div class="">
+		    <i class="bi bi-file-earmark-pdf"></i>
+                    <a href="./resources/rolis-eurosys22.pdf" class="pub-link">
+                        PDF
+                    </a>
+		    <i class="bi bi-file-earmark-slides"></i>
+                    <a href="./resources/rolis-slides.pdf" class="pub-link">
+                        Slides
+                    </a>
+                    <i class="bi bi-code"></i>
+                    <a href="https://github.com/stonysystems/rolis" class="pub-link">Source Code</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Services</h2>
+            <div class="service-item">
+                <a href="https://www.usenix.org/sites/default/files/atc24-message.pdf" style="color: #3498db; text-decoration: none;">External Review Committee</a> for USENIX ATC 2024
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Teaching</h2>
+            <div class="teaching-item">
+                Teaching Assistant on <a href="http://mpaxos.com/teaching/ds/22fa/" style="color: #3498db; text-decoration: none;">CSE 535: Distributed Systems</a>, Fall 2022
+            </div>
+            <div class="teaching-item">
+                Teaching Assistant on <a href="https://bsd7.cs.stonybrook.edu/~cse320/" style="color: #3498db; text-decoration: none;">CSE 320: Systems Fundamentals II</a>, Spring 2021
+            </div>
+            <div class="teaching-item">
+                Teaching Assistant on CSE 305: Database Design and Practice, Fall 2020
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">Software Engineer Intern</div>
+                        <div class="exp-company">NetInfra, Google, Sunnyvale, CA</div>
+                    </div>
+                    <div class="exp-dates">May 2024 – Aug 2024</div>
+                </div>
+                <ul class="exp-details">
+                    <li>Developed a prototype for 1:N networking multiplexing in LibFabric, enabling efficient communication between one endpoint and multiple shared queue pairs (QPs).</li>
+                    <li>Conducted comprehensive benchmarks on RDMA isolation using our RDMA-connected SmartNICs, analyzing interesting findings.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">System Research Intern</div>
+                        <div class="exp-company">Infrastructure system lab, ByteDance (Tiktok), Mountain View, CA</div>
+                    </div>
+                    <div class="exp-dates">May 2021 – Aug 2021</div>
+                </div>
+                <ul class="exp-details">
+                    <li>Designed and implemented a prototype memory allocation and tracking engine for the next-generation HSAP database system, optimizing resource utilization and system performance.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">Software development & data engineer</div>
+                        <div class="exp-company">ByteDance/Baidu/Ganji (acquired by 58.com), Beijing, China</div>
+                    </div>
+                    <div class="exp-dates">July 2014 – June 2018</div>
+                </div>
+                <ul class="exp-details">
+                    <li>Developed an intelligent ad platform by integrating multiple ad engines, managing thousands of keywords to significantly enhance user growth. (Bytedance)</li>
+                    <li>Implemented a real-time big data analysis platform using Apache Storm, Apache Flink, Apache Spark, and HBase, delivering scalable, near real-time statistical data to users. (Bytedance)</li>
+                    <li>Designed and implemented a robust data warehouse using Apache Hive, enabling continuous monitoring and optimization of long-term user retention rates. (Bytedance)</li>
+                    <li>Built a big data tool to analyze application performance; delivered software solutions in PHP for the application and systems according to specific needs. (Baidu)</li>
+                    <li>Enhanced website search engine optimization (SEO); developed PHP software solutions to meet diverse application and system needs. (Ganji)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
