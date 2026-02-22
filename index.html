@@ -261,10 +261,11 @@
                     <div>Email: weihshen at cs stonybrook edu</div>
                     <div style="margin-top: 10px;">
                         Links: 
-                        <a href="https://scholar.google.com/citations?hl=en&user=MUfiJWgAAAAJ">Google Scholar</a> / 
-                        <a href="https://x.com/WeihaiShen">Twitter</a> / 
-                        <a href="https://www.linkedin.com/in/tall-cool-13yrs/">LinkedIn</a> /
-                        <a href="./resources/cv.pdf">CV</a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=MUfiJWgAAAAJ">Google Scholar</a>/ 
+                        <a href="https://x.com/WeihaiShen">Twitter</a>/ 
+                        <a href="https://www.linkedin.com/in/tall-cool-13yrs/">LinkedIn</a>/
+                        <a href="./resources/cv.pdf">CV</a>/ 
+                        <a href="https://github.com/shenweihai1">Github</a>
                     </div>
                 </div>
             </div>
@@ -325,6 +326,53 @@
         </div>
         
         <div class="section">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">Software Engineer Intern</div>
+                        <div class="exp-company">NetInfra, Google, Sunnyvale, CA</div>
+                    </div>
+                    <div class="exp-dates">May 2024 – Aug 2024</div>
+                </div>
+                <ul class="exp-details">
+                    <li>Built and ran RDMA isolation microbenchmarks on RoCE-connected servers to characterize cross-tenant interference in Google Cloud, identifying 5+ potential fairness issues.</li>
+                    <li>Built a libfabric-based RDMA multiplexing prototype that lets one endpoint communicate with many peers by sharing queue pairs (QPs) for large-scale systems.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">System Research Intern</div>
+                        <div class="exp-company">Infrastructure system lab, ByteDance (Tiktok), Mountain View, CA</div>
+                    </div>
+                    <div class="exp-dates">May 2021 – Aug 2021</div>
+                </div>
+                <ul class="exp-details">
+                    <li>Profiled memory behavior across OLAP execution paths (vectorized operators, caching, memory pools) to inform allocator design and tuning.</li>
+                    <li>Designed and implemented a jemalloc-style allocator prototype for the database, reducing memory consumption by 10\% across representative workloads.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">Software development & data engineer</div>
+                        <div class="exp-company">ByteDance/Baidu/Ganji (acquired by 58.com), Beijing, China</div>
+                    </div>
+                    <div class="exp-dates">July 2014 – June 2018</div>
+                </div>
+                <ul class="exp-details">
+                    <li>Developed an ad platform that unified multiple ad engines and supported large keyword inventories for scalable targeting and growth. (ByteDance)</li>
+                    <li>Designed and implemented a near-real-time analytics pipeline (Storm/Flink/Spark + HBase) to support scalable metric aggregation. (ByteDance)</li>
+                    <li>Delivered scalable web and backend solutions, collaborating with product teams to translate requirements into production-ready implementations. (Baidu / Ganji)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
             <h2 class="section-title">Services</h2>
             <div class="service-item">
                 <a href="https://www.usenix.org/sites/default/files/atc24-message.pdf" style="color: #3498db; text-decoration: none;">External Review Committee</a> for USENIX ATC 2024 <br>
@@ -368,54 +416,7 @@
                 Teaching Assistant on ISE 305: Database Design and Practice, Fall 2020
             </div>
         </div>
-        
-        <div class="section">
-            <h2 class="section-title">Experience</h2>
-            
-            <div class="experience-item">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">Software Engineer Intern</div>
-                        <div class="exp-company">NetInfra, Google, Sunnyvale, CA</div>
-                    </div>
-                    <div class="exp-dates">May 2024 – Aug 2024</div>
-                </div>
-                <ul class="exp-details">
-                    <li>Developed a prototype for 1:N networking multiplexing in LibFabric, enabling efficient communication between one endpoint and multiple shared queue pairs (QPs).</li>
-                    <li>Conducted comprehensive benchmarks on RDMA isolation using our RDMA-connected SmartNICs, analyzing interesting findings.</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">System Research Intern</div>
-                        <div class="exp-company">Infrastructure system lab, ByteDance (Tiktok), Mountain View, CA</div>
-                    </div>
-                    <div class="exp-dates">May 2021 – Aug 2021</div>
-                </div>
-                <ul class="exp-details">
-                    <li>Designed and implemented a prototype memory allocation and tracking engine for the next-generation HSAP database system, optimizing resource utilization and system performance.</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">Software development & data engineer</div>
-                        <div class="exp-company">ByteDance/Baidu/Ganji (acquired by 58.com), Beijing, China</div>
-                    </div>
-                    <div class="exp-dates">July 2014 – June 2018</div>
-                </div>
-                <ul class="exp-details">
-                    <li>Developed an intelligent ad platform by integrating multiple ad engines, managing thousands of keywords to significantly enhance user growth. (Bytedance)</li>
-                    <li>Implemented a real-time big data analysis platform using Apache Storm, Apache Flink, Apache Spark, and HBase, delivering scalable, near real-time statistical data to users. (Bytedance)</li>
-                    <li>Designed and implemented a robust data warehouse using Apache Hive, enabling continuous monitoring and optimization of long-term user retention rates. (Bytedance)</li>
-                    <li>Built a big data tool to analyze application performance; delivered software solutions in PHP for the application and systems according to specific needs. (Baidu)</li>
-                    <li>Enhanced website search engine optimization (SEO); developed PHP software solutions to meet diverse application and system needs. (Ganji)</li>
-                </ul>
-            </div>
-        </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
